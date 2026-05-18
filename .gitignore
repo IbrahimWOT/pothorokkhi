@@ -1,0 +1,24 @@
+# Security/Local Secrets
+.env
+.env.local
+
+# Go Compiled Binaries & Outputs
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+pothrokkhi-backend
+pothrokkhi-core
+
+# OS Specific Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDEs and Code Editors Cache
+.vscode/
+.idea/
+*.suo
+*.sln
+*.swp
