@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgis/postgis:15-3.3
+    container_name: pothorokkhi_postgres
+
+    environment:
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: Mr.Hridoy445! # <--- আপনার কাস্টম পোস্টগ্রেস পাসওয়ার্ড এখানে বসান
+      POSTGRES_DB: pothorokkhi_db
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    container_name: pothorokkhi_redis
+    command: redis-server --requirepass RedisHridoy445! # <--- আপনার কাস্টম রেডিস পাসওয়ার্ড এখানে বসান
+    ports:
+      - "6379:6379"
